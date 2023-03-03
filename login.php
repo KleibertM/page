@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /page');
+    header('Location: /final');
   }
   require 'conexion.php';
 
@@ -17,7 +17,7 @@
 
     if (count($results) > 0 && password_verify($_POST['clave'], $results['clave'])) {
       $_SESSION['user_id'] = $results['cod'];
-      header("Location: /page");
+      header("Location: /final");
     } else {
       $message = 'Lo Siento, hubo un problema';
     }
