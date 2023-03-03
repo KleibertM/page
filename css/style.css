@@ -9,9 +9,12 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    background-color: aqua;
+    background: content-box radial-gradient(rgb(190, 204, 219), rgb(47, 14, 236));
 }
-
+table .table_title{
+    color: #fff;
+    font-size: 80px;
+}
 h1 {
     text-transform: uppercase;
 }
@@ -24,12 +27,46 @@ input{
     border: 1px solid #eee;
     margin: 10px auto;
 }
+.contenedor-table{
+    position: relative;
+    margin: 30px;
+}
+.util a{
+    position: relative;
+    background-color: rgb(23, 156, 112);
+    border-radius: 3px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #eee;
+}
 
-button, .util{
+.util a:hover{
+    transition: .3s ease-in;
+    box-shadow: 1px 10px 10px black;
+    background-color: chartreuse;
+    font-weight: bold;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+.close { 
+    margin-top: 50px;
+}
+.close a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 500px;
+}
+button{
     text-transform: uppercase;
     padding: 10px;
     color: #fff;
-    background-color: rgb(13, 199, 137);
+    background-color: rgb(23, 156, 112);
     width: 320px;
     margin: 10px auto;
     margin-top: 0;
@@ -41,8 +78,11 @@ button, .util{
 }
 
 button:hover{
-    transition: .3s ease-in;
+    transition: .5s ease-in-out;
     box-shadow: 1px 10px 10px black;
+    background-color: chartreuse;
+    font-weight: bold;
+    color: black;
 }
 header{
     border-bottom: 2px solid #eee;
@@ -53,5 +93,5 @@ header{
 
 header a{
     text-decoration: none;
-    color: #333;
+    color: #fffdfd;
 }

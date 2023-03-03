@@ -15,7 +15,7 @@ $cont=0;
 		<?php require 'header.php' ?>
 		<div class="contenedor-table" align=center>
             <table class="tabla"  border=1>
-                <tr class="table__title" bgcolor=skyblue >Datos del Alumno</tr>
+                <tr class="table_title">Datos del Alumno</tr>
                 <tr class="title" bgcolor=yellow align="center">
                     <td class="table__header">Item</td>
                     <td class="table__header">Cod. Alumno</td>
@@ -42,7 +42,9 @@ $cont=0;
 		<div class="util" >
 			<a href="registro.php">insertar</a>
 			<a href="buscar.php">eliminar</a>
-			<a href="modificar.php">modificar</a>
 		</div>
+        <div class="close">
+            <a href="cerrar.php">Cerrar seccion</a>
+        </div>
     </body>
 </html>

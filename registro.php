@@ -1,3 +1,22 @@
+<?php
+  require 'conexion.php';
+
+  $message = '';
+
+  if (!empty($_POST['email']) && !empty($_POST['clave'])) {
+    $sql = "INSERT INTO alumno (email, clave) VALUES (:email, :clave)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':email', $_POST['email']);
+    $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
+    $stmt->bindParam(':clave', $clave);
+
+    if ($stmt->execute()) {
+      $message = 'Registrado Exisoto';
+    } else {
+      $message = 'Hubo un Problema';
+    }
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>

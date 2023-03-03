@@ -44,7 +44,7 @@
             <input type="password" name="clave" placeholder="Ingresa Tu Clave" required><br>
             <button class="btn" name="enviar" >Iniciar Seccion</button>
         </form>
-        <p>¿No tienes una cuenta? <a href="registro.php">Regístrate</a></p>
+        <p>¿No tienes una cuenta? <a class="link" href="registro.php">Regístrate</a></p>
     </div> 
   </body>
 </html>
